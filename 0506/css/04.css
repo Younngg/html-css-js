@@ -1,0 +1,85 @@
+.header {
+    height: 100px;
+    border-bottom: 1px solid #999;
+}
+.Inner {
+    width: 1200px; margin: auto; 
+}
+.header .logo {
+    float:left;
+    line-height: 100px;
+    font-weight: bold;
+    font-size: 24px;
+    width: 100px;
+    text-align: center;
+}
+.header .gnb{
+    float:right;
+}
+.header .gnb li{
+    float:left; width:100px; height:100px;
+    text-align:center;
+    line-height:100px;
+}
+.header .gnb li a{
+    display: block;
+    height:100px;
+}
+.header .gnb li a:hover{
+    background-color: #000;
+    color:#fff;
+}
+.mainBanner {
+    height: 700px;
+    background: url("../file/img/husky/bg2.jpg") no-repeat;
+    background-size: cover;
+}
+.mainBanner>h2 {
+    display: none;
+}
+.contents {
+    padding: 80px 0 80px;
+}
+.imgList {
+    width: 960px;
+    margin: auto;
+}
+.imgList>li>img {
+    display: block;
+    float:left;
+    margin-bottom: 20px;
+}
+.list {
+    width: 960px;
+    margin:auto;
+}
+.list>li {
+    display: block;
+    width: 320px;
+    margin: 20px auto 0;
+    float: left;
+    text-align: center;
+}
+.listTitle {
+    margin: 30px 0 20px 0;
+    font-size: 16px;
+}
+.listcontent {
+    font-size: 14px;
+}
+
+.subvisual {
+    height:1000px;
+    background: url(../file/img/husky/21.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.footer {
+    height:100px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+}
+address {font-style: normal;}

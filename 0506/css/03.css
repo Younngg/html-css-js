@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* 초기화 eric meyer's reset css 2.0, normalize css*/
+/* *{padding: 0; margin:0;} */
+h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p {padding: 0; margin:0;}
+li {list-style: none;}
+a {text-decoration: none; color:inherit;}
+h1, h2, h3, h4, h5, h6 {font-weight: normal; font-weight: 100%;}
+body {line-height: 1;}
+table {border-collapse: collapse;}
+.cf::after {content:'';display: block;width: 0;height: 0;clear: both;}
+
+
+.wrapper {
+    width: 602px;margin:auto;border:1px solid #333;
+}
+.titleArea {
+    padding: 45px 15px 0;
+    font-size: 14px;
+}
+.titleArea>h1 {
+    float:left;
+}
+.titleArea>a {
+    float:right;
+}
+.listArea {
+    padding: 15px 15px 0;
+}
+.listArea>ul>li {
+    float:left; word-break: keep-all; margin-right:10px; margin-bottom: 10px; width: 184px; height: 198px; text-align: center;
+}
+.listArea>ul>li:nth-child(3n) {
+    margin-right: 0px;
+}
+.listArea>ul>li .des {
+    font-size: 14px;
+    margin-top: 5px;
+    line-height: 1.4;
+}
+h1, h1>a {height: 15px; line-height: 15px;}
