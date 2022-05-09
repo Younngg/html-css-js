@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="file/css/reset.css">
+    <style>
+        .gnb {
+            width:1000px; height:110px; margin:auto; position: relative;
+        }
+        .depth1 {
+            float: left; width:200px;
+        }
+        .depth1>a {
+            display: block; height:110px; line-height: 110px; font-size: 22px; text-align: center; color: #333; position: relative;
+        }
+        .depth1>a::after {
+            content:''; display: block; height: 2px; width: 0px; background-color: red; position: absolute; bottom:0; left:50%; transform: translateX(-50%);
+        }
+        .depth1:hover>a::after {
+            width:40px; transition: all .5s;
+        }
+        .depth1:hover>.subbox {
+            display: block;
+        }
+        .subbox{
+            position: absolute; left:0; top: 110px; width:1000px; height: 80px; line-height: 80px; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc;background-color: #fff; display: none;
+        }
+        .subbox>a {
+            float:left; font-size: 18px; margin-left: 10px; margin-right: 100px; color:#900; display: block; height: 80px; line-height: 80px; position: relative;
+        }
+        .subbox>a::after {
+            content: ''; display: block; background: url(file/img/subArr.png) no-repeat; width: 14px; height: 14px; position: absolute; right: -45px; top:32.5px
+        }
+        .subbox>.depth2 {
+            float:left;
+        }
+        .subbox>.depth2>li {
+            float: left; margin-right: 80px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="gnb cf">
+        <li class="depth1">
+            <a href="#">롯데웨딩소개</a>
+            <div class="subbox">
+                <a href="#">롯데웨딩소개</a>
+                <ul class="depth2">
+                    <li><a href="#">웨딩마일리지</a></li>
+                    <li><a href="#">웨딩컨시어지</a></li>
+                    <li><a href="#">방문 안내</a></li>
+                </ul>
+            </div>
+        </li>
+        <!--//롯데웨딩소개-->
+        <li class="depth1">
+            <a href="#">웨딩컨설팅</a>
+            <div class="subbox">
+                <a href="#">웨딩컨설팅</a>
+                <ul class="depth2">
+                    <li><a href="#">스튜디오</a></li>
+                    <li><a href="#">드레스</a></li>
+                    <li><a href="#">메이크업</a></li>
+                    <li><a href="#">기타</a></li>
+                </ul>
+            </div>
+        </li>
+        <!--//웨딩컨설팅-->
+          <li class="depth1">
+           <a href="#">이벤트</a>
+            <div class="subbox">
+               <a href="#">이벤트</a>
+                <ul class="depth2">
+                    <li><a href="#">진행중인 이벤트</a></li>
+                    <li><a href="#">지난 이벤트</a></li>
+                    <li><a href="#">당첨자 발표</a></li>
+                </ul>
+            </div>
+        </li>
+        <!--//이벤트-->
+        <li class="depth1">
+            <a href="#">커뮤니티</a>
+            <div class="subbox">
+                <a href="#">커뮤니티</a>
+                <ul class="depth2">
+                    <li><a href="#">웨딩TIP</a></li>
+                    <li><a href="#">웨딩Talk</a></li>
+                    <li><a href="#">랜선집들이</a></li>
+                </ul>
+            </div>
+        </li>
+        <!--//커뮤니티-->
+        <li class="depth1">
+            <a href="#">Q&amp;A</a>
+            <div class="subbox">
+                <a href="#">Q&amp;A</a>
+                <ul class="depth2">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">1:1문의</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </li>
+        <!--//Q&A-->
+    </ul>
+</body>
+</html>
