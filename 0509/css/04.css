@@ -1,0 +1,9 @@
+.gnb {width:1400px; margin: 30px auto; position: relative;}
+.depth1 {width:200px; float:left; text-align: center;}
+.depth1>a {display: block; height: 50px; line-height: 50px; background-color: #202020; font-size: 20px; font-weight: bold; color: #fff;}
+.depth1:hover>a {background-color: #f00;}
+.depth1:hover>.depth2 {display: block;}
+.depth2 {position: absolute; top:50px; left:0; width: 1400px; background-color: #d0d0d0; display:none;}
+.depth2>li {float: left;}
+.depth2>li>a {display: block; height: 40px; width:150px; line-height: 40px; font-size: 17px;}
+.depth2>li>a:hover {background-color: #444; color:#fff;}

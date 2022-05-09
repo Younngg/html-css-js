@@ -1,0 +1,15 @@
+.header {border-bottom: 1px solid #999;}
+.inner {width:1000px; margin: auto;}
+.main-banner{height: 600px; background: url(../file/img/fall3.jpg);}
+.util>ul {float: right; padding: 15px 0;}
+.util ul li {float: left; margin-left: 15px; font-size: 14px; color: #333;}
+.util ul li:first-child {color: #999;}
+
+.header-main>h1 {float:left;}
+.header-main .gnb {float: right;}
+.header-main .gnb .depth1 {float: left; margin-left: 60px; position: relative;}
+.header-main .gnb .depth1>a {font-size: 20px; font-weight: bold; display: block; height: 60px; line-height: 60px;}
+.header-main .gnb .depth2 {position: absolute; background-color: #fff; width: 200px;left: 50%; top: 60px;border-top: 2px solid #00aa11; display: none; margin-left: -100px;}
+.header-main .gnb .depth1:hover>.depth2 {display: block;}
+.header-main .gnb .depth2 a {display: block; height: 20px; line-height: 20px; text-align: center;padding: 10px 0; font-weight: 15px; color: #888;}
+.header-main .gnb .depth2 a:hover {color:#333}
