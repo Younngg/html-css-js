@@ -18,3 +18,5 @@
 0509/file/*
 !0509/file/ex1.html
 !0509/file/css/reset.css
+0510/file/*
+!0510/file/css/reset.css
