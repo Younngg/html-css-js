@@ -1,0 +1,7 @@
+.header {height:113px;}
+
+.header h1 {
+    background: url('../file/img/sprite__common.png') no-repeat 0 0;
+    width: 292px;
+	height: 76px;
+}
