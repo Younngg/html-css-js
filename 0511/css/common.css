@@ -1,0 +1,116 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Philosopher:wght@400;700&display=swap');
+/* 
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Philosopher', sans-serif; 
+*/
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.inner{
+    width:1280px;
+    margin: auto;
+}
+
+/* 헤더 */
+.header-top {
+    height: 170px;
+    padding-top: 44px;
+    box-sizing: border-box;
+}
+.header-top .inner {
+    position: relative;
+}
+.header-top .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.header-top .logo a{
+    display: block;
+    width: 199px;
+    height: 64px;
+    background: url(../file/img/logo.png) no-repeat;
+    text-indent: -9999px;
+    font-size: 0;
+}
+.lang-area {
+    width: 85px;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    background-color: #edeee2;
+    color: #858181;
+    font-size: 12px;
+    margin-left: 14px;
+    margin-top: 21px;
+    text-transform: uppercase;
+    position: relative;
+}
+.lang-area::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 5px;
+    background: url(../file/img/lang_bullet.png) no-repeat;
+    top:10px;
+    right:13px;
+}
+.lang-list li {
+    height: 25px;
+    background-color: #edeee2;
+    line-height: 25px;
+    padding-left: 17px;
+}
+
+.topmenu-area {
+    float: right;
+}
+.top-search-area {
+    float: left;
+    width: 174px;
+    height: 45px;
+    background-color: #edeee2;
+    border-radius: 24px;
+    position: relative;
+    margin-top: 8px;
+}
+.top-search-area #searchBox {
+    border: none;
+    height: 40px;
+    width: 105px;
+    margin-left: 26px;
+    background-color: #edeee2;
+    outline: none;
+    margin-top: 2.5px;
+}
+.top-search-area label {
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url(../file/img/search-btn.png) no-repeat;
+    text-indent: -9999px;
+    font-size: 0;
+    position: absolute;
+    right: 24px;
+    top: 9px;
+}
+.util-list {float: left;}
+.util-list li {float:left;}
+.util-list li>a {
+    display: block;
+    text-indent: -9999px;
+    font-size: 0;
+    margin-left: 42px; margin-top: 13px;}
+.util-list .mypage {
+    width: 38px;
+    height: 38px;
+    background: url(../file/img/mypage-icon.png) no-repeat;
+}
+.util-list .cart {
+    width: 34px;
+    height: 38px;
+    background: url(../file/img/cart-icon.png) no-repeat center;
+    margin-left: 49px;
+}
