@@ -1,0 +1,53 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Philosopher:wght@400;700&display=swap');
+
+.inner {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+.header-top {
+    padding-top: 44px;background-color: #fffef2;
+}
+.header-top .inner .logo {
+    width: 200px;
+    height: 64px;
+    background: url(../file/img/logo.png) no-repeat;
+    margin: auto;
+    text-indent: -9999px;
+    font-size: 0;
+}
+.header-top .inner .logo>a {
+    width: 200px;
+    height: 64px;
+    display: block;
+}
+
+.lang-area {
+    position: relative;
+    width: 90px;
+    font-size: 12px;
+    line-height: 25px;
+    box-sizing: border-box;
+}
+.lang-list>li {
+    position:relative;
+    width: 90px;
+    height: 25px;
+    background: #edeee2;
+    text-indent:17px;
+}
+.lang-list a {
+    display: block;
+}
+.lang-list>li:nth-of-type(1) a::after {
+    content: '';
+    display: block;
+    background: url(../file/img/lang_bullet.png) no-repeat;
+    width: 8px;
+    height: 5px;
+    position: absolute;
+    right: 13px;
+    top: 10px;
+}
+.top-menu-area

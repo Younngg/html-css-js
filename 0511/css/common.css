@@ -315,9 +315,10 @@ body{
 }
 .livechat .live-chat-btn {
     display: block; text-indent: -9999px; background: url(../file/img/chat-open-btn.png) no-repeat center top 36px #464646; width:115px; height: 115px; border-radius: 50%;
+    cursor: pointer;
 }
 
-.livechat .chatbox {position: absolute; right:0; bottom:130px; width: 295px; height: 305px; border: 1px solid #464646; background-color: #fff;}
+.livechat .chatbox {position: absolute; right:0; bottom:130px; width: 295px; height: 350px; border: 1px solid #464646; background-color: #fffef2;}
 
 .chat-top-area {
     height: 45px; background-color: #38855d; color: #f1f1f1;font-size: 20px; text-align: center; line-height: 45px; position: relative;
@@ -326,8 +327,52 @@ body{
     content: ''; display: block; width: 15px; height: 10px; background: url(../file/img/chat-bullte.png) no-repeat; position: absolute; right: 56px; top: 50%; transform: translateY(-30%);
 }
 .chat-mid-area {
-    padding-left: 18px; padding-top: 13px; box-sizing: border-box;
+    padding-left: 18px; padding-top: 13px; box-sizing: border-box; height: 247px;
 }
-.chat-bottom-area {
+.chat-mid-area>h2 {
+    float: left;
+}
+.chat-txt {
+    float: left;
+    width: 200px;
+    height: 247px;
+    margin-left: 7.5px;
+}
+.chat-name {
+    font-size: 20px;
+    color: #469d70;
+    margin-bottom: 5px;
+}
+.chat-content1 {
+    font-size: 14px;
+    line-height: 19px;
+}
+.chat-content2 {
+    font-size: 12px;
+    line-height: 19px;
+}
 
+.chat-input-area {
+    padding-left: 18px;
+}
+.chat-input-area input {
+    float: left;
+    height: 35px;
+    width: 198px;
+    border: 1px solid #000;
+    background: transparent;
+    outline: none;
+    padding-left: 10px;
+    
+}
+.chat-input-area button {
+    float: left;
+    width: 60px;
+    height: 37px;
+    background-color: #469d70;
+    color: #fffef2;
+    font-size: 17px;
+    text-align: center;
+    line-height: 17px;
+    cursor: pointer;
 }
