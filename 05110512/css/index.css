@@ -1,0 +1,279 @@
+/* 메인 */
+.mainbanner {
+    height: 650px;
+    background: url(../file/img/main/mainbanner1.png) no-repeat center / cover;
+    font-size: 0;
+    text-indent: -99999px;
+}
+
+/* 신제품 */
+.product-new {
+    height: 610px;
+    background-color: #fffef2;
+    padding-top: 120px;
+    box-sizing: border-box;
+}
+.product-new h3 {
+    text-align: center;
+    color: #464646;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 55px;
+}
+.product-new .product-new-list {
+    width: 1230px;
+    height: 310px;
+    margin: auto;
+}
+.product-new-list>li {
+    float: left;
+    margin-right: 21px;
+}
+.product-new-list>li:last-child {
+    margin-right: 0;
+}
+.product-new-list .new-item-img {
+    display: block;
+    width: 229px;
+    height: 229px;
+}
+.product-new-list .des {
+    text-align: center;
+    margin-top: 17px;
+}
+.product-new-list .des dt {
+    font-size: 15px; 
+    color: #333333;
+    line-height: 21px;
+}
+.product-new-list .des dt span {
+    font-size: 12px;
+}
+.product-new-list .des dd {
+    font-size: 14px;
+    color: #666;
+    margin-top: 14px;
+}
+
+/* 베스트아이템 */
+
+.product-best {
+    height: 672px;
+    background-color: #465a4f;
+    padding-top: 110px;
+    box-sizing: border-box;
+}
+.product-best h3 {
+    text-align: center;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fffffa;
+    margin-bottom: 60px;
+}
+.product-best-list {
+    width: 1205px;
+    margin: auto;
+    color: #fffef2;
+}
+.product-best-list>li {
+    float: left;
+    text-align: center;
+    margin-right: 27px;
+}
+.product-best-list>li:last-child {
+    margin-right: 0;
+}
+.product-best-list .best-item-img {
+    display: block; width: 280px; height: 280px; 
+}
+.product-best-list .des dt {
+    margin-top: 17px;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+.product-best-list .des dd {
+    font-size: 16px;
+}
+.product-best-list .des dd:last-child {
+    width: 65px;
+    height: 12px;
+    background: url(../file/img/main/star.png);
+    margin: auto;
+    text-indent: -9999px;
+    font-size: 0;
+    margin-top: 17px;
+}
+
+/* 차별점 */
+.product-different {
+    height: 630px;
+    background-color: #fffef2;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+.product-different h3 {
+    text-align: center;
+    font-family: 'Philosopher',sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: #464646;
+    margin-bottom: 62px;
+}
+.different-list {
+    width: 1168px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #666;
+}
+.different-list li {
+    float: left;
+    margin-right: 84px;
+}
+.different-list li:last-child {
+    margin-right: 0;
+}
+.different-list li .different-img {width: 228px; height: 229px;}
+.different-list .different-img{
+    margin-bottom: 55px;
+}
+
+/* 스토어 */
+.store {
+    height: 655px; background-color: #f8f6e5;
+position: relative;
+}
+.inner {
+    z-index: 100;
+    position: relative;
+}
+.store .right-bg {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 655px;
+    background-color: #f3f2e9;
+}
+.store .store-left {
+    width: 50%;
+    height: 655px;
+    float: left;
+    padding-top: 128px;
+    padding-left: 37px;
+    box-sizing: border-box;
+}
+.store .store-left h3 {
+    font-size: 40px;
+    color: #464646;
+    font-weight: 700;
+    font-family: 'Philosopher',serif;
+    margin-bottom: 40px;
+}
+.store .store-left p:nth-of-type(1) {
+    font-size: 39px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+.store .store-left p:nth-of-type(2) {
+    font-size: 18px;
+    line-height: 21px;
+    color: #666;
+}
+.store .store-left p:nth-of-type(3) {
+    font-size: 21.1px;
+    color: #666;
+    line-height: 36px;
+    margin-top: 45px;
+}
+.store .store-left .new-store-more {
+    display: block;
+    width: 220px;
+    height: 60px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 60px;
+    text-align: center;
+    background-color:#465a4f;
+    margin-left: 146px;
+    margin-top: 73px;
+}
+
+.store .store-right {
+    width: 50%;
+    height: 655px;
+    float: left;
+    padding-left: 58px;
+    padding-top: 68px;
+    box-sizing: border-box;
+}
+.store .store-right .slide-control {
+    margin-top: 46px; margin-left: 15px;
+}
+.store .store-right .slide-control button {
+    float: left;
+    text-indent: -9999px;
+    font-size: 0;
+    width: 49px;
+    height: 15px;
+}
+.store .store-right .slide-prev-btn {
+    background: url('../file/img/main/prev-arrow.png') no-repeat;
+    margin-right: 44px;
+}
+.store .store-right .slide-next-btn {
+    background: url('../file/img/main/next-arrow.png') no-repeat;
+}
+
+/* SNS */
+.sns {
+    padding-top: 193px;
+    text-align: center;
+    height: 740px;
+}
+.sns h3 {
+    font-family: 'Philosopher',sans-serif;
+    font-size: 53px;
+    line-height: 45px;
+    text-align: center;
+    color: #464646;
+    margin-bottom: 66px;
+}
+.sns-list {
+    width: 1202px;
+    margin: auto;
+}
+.sns-list li {
+    float: left;
+    margin-right: 27px;
+}
+.sns-list li:last-child {
+    margin-right: 0;
+}
+.sns-list li p:nth-of-type(1) {
+    margin-bottom: 32px;
+}
+.sns-list li p:nth-of-type(2) {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+}
+
+/* 코멘트 */
+.comment {
+    background-color: #85918a;
+    height: 907px;
+    padding-top: 203px;
+    box-sizing: border-box;
+}
+.comment-img {
+    background: url(../file/img/main/comment.png) no-repeat;
+    width: 910px;
+    height: 520px;
+    margin: auto;
+}
