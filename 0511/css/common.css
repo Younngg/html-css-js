@@ -7,6 +7,7 @@ font-family: 'Philosopher', sans-serif;
 
 body{
     font-family: 'Noto Sans KR', sans-serif;
+    background-color: #fffef2;
 }
 .inner{
     width:1280px;
@@ -130,6 +131,9 @@ body{
     margin-left: 23px;
     border: none;
     cursor: pointer;
+}
+#allMenuBtn:hover ~ .allmenu-area {
+    display: block;
 }
 .gnb {
     float: left;
@@ -336,7 +340,7 @@ body{
     float: left;
     width: 200px;
     height: 247px;
-    margin-left: 7.5px;
+    margin-left: 8px;
 }
 .chat-name {
     font-size: 20px;
