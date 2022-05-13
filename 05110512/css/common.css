@@ -9,6 +9,10 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #fffef2;
 }
+.wrapper {
+    width: 100%;
+    min-width: 1280px;
+}
 .inner{
     width:1280px;
     margin: auto;

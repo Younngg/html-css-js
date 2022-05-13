@@ -1,0 +1,289 @@
+html,body {text-size-adjust: none; font-size: 16px;}
+a {display: block;}
+body{overflow-x: hidden;}
+
+/* header */
+.header {
+    background-color: #242424;
+    height: 70px;
+    position: relative;
+}
+.header h1{
+    height: 70px;
+    width: 150px;
+    margin: auto;
+    text-indent: -9999px;
+    font-size: 0;
+    background:url('../img/icon/text-logo.png') no-repeat center;
+    background-size: auto 31px;
+}
+.header h1 a {
+    height: 100%;
+}
+.header .home-btn {
+    text-indent: -9999px;
+    font-size: 0;
+    width: 36px;
+    height: 34px;
+    background: url('../img/icon/toplogo.png') no-repeat center / 12px auto;
+    position: absolute;
+    top: 18px; left: 20px;
+}
+
+.header .menu-btn {
+    text-indent: -9999px;
+    width: 46px;
+    height: 46px;
+    background: url('../img/icon/menu-btn.png') no-repeat center / 29px auto;
+    position: absolute; 
+    right: 16px; top: 12px;
+}
+
+.main-banner li {
+    position: relative;
+}
+.main-banner li img {
+    width:100%;
+}
+.main-banner li a {
+    position: absolute;
+    width: 38.055vw; height: 10.277vw;
+    bottom: 17.777vw; left: 50%; transform: translateX(-50%);
+    background-color: #eee;
+    color: #515151;
+    line-height: 10.277vw;
+    text-align: center;
+    font-size: 3.888vw;
+}
+
+.subscribe-area {
+    padding: 12.222vw 0;
+}
+.subscribe-area .subscribe-title {
+    font-size: 4.44vw; color: #36373b;
+    text-align: center;
+    line-height: 1.79;
+    margin-bottom: 3.888vw;
+    text-align: center;
+}
+.subscribe-area .subscribe-list li {
+    text-align: center;
+    margin-bottom: 3.3333vw;
+}
+.subscribe-area .subscribe-list li img {
+    width: 73.8888vw;
+}
+.subscribe-area .subscribe_btn {
+    width: 64.7222vw;
+    height: 16.389vw;
+    font-size: 4.444vw;
+    line-height: 16.389vw;
+    text-align: center;
+    background-color: #36373b;
+    color: #fff;
+    margin: 5.55vw auto 0; /* 다시 계산 */
+}
+
+/* 메뉴영역 */
+.menu-area {
+    background: url('../img/menu-bg.png') no-repeat top  center / cover;
+    padding: 16.111vw 4.444vw 14.722vw;
+}
+.menu-area .menu-title {
+    font-size: 8.05vw;
+    text-align: center;
+    color: #f1f1f1;
+    padding-top: 4.44vw;
+    position: relative;
+}
+.menu-area .menu-title::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 10.833vw;
+    height: 1.389vw;
+    top:0; left: 50%;
+    transform: translateX(-50%);
+    background-color: #1da4d9;
+}
+.menu-area .menu-title-sub {
+    font-size: 3.889vw;
+    text-align: center;
+    color: #1da4d9;
+    margin-top: 3.889vw;
+    margin-bottom: 8.889vw;
+}
+
+.menu-area .menu-list>li {
+    width: calc(50% - 4.5px);
+    float: left;
+}
+.menu-area .menu-list>li:nth-child(2n+1){margin-right: 4.5px;}
+.menu-area .menu-list>li:nth-child(2n){margin-left: 4.5px;}
+.menu-area img {width: 100%;}
+.menu-area .menu-list>li span {display: block;}
+.menu-area .menu-list>li .menu-thum-txt {text-align: center; color: #a1a1a1; padding: 3.889vw 0; font-size: 2.778vw;}
+.menu-area .menu-list>li .menu-thum-txt strong {color: #fff; display: block; font-size: 3.333vw;}
+
+.menu-area .menu-allview-btn {
+    margin: auto;
+    color: #fff;
+    background-color: #00a1df;
+    font-size: 3.6vw;
+    text-align: center;
+    line-height: 13.35vw;
+    width: 45.55vw;
+    height: 13.35vw;
+    margin-top: 11.66vw;
+}
+
+/* 베스트 메뉴 */
+.best-area {
+    background-color: #ebebeb;
+    padding: 15.278vw 4.444vw 7.778vw;
+}
+.best-area .best-title {
+    color:#36373b;
+    font-size: 5.556vw;
+    margin-left: 7.500vw;
+    margin-bottom: 4.167vw;
+}
+.best-area .best-title-sub {
+    color: #5e6068;
+    font-size: 3.333vw;
+    margin-left: 7.500vw;
+    margin-bottom: 4.722vw;
+}
+.best-area .best-list{
+    width: 90.556vw;
+    background-color: #fff;
+    padding-bottom: 6.111vw;
+}
+.best-area .best-list img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 4.722vw;
+}
+.best-area .best-list h4, p {
+    margin: 0 8.333vw;
+}
+.best-area .best-list .best-name {
+    color: #4b4e54;
+    font-size: 5.278vw;
+    margin-bottom: 4.167vw;
+}
+.best-area .best-list .best-des {
+    color: #606367;
+    font-size: 3.056vw;
+    line-height: 1.65;
+}
+.next-menu-btn {
+    width: 22.222vw;
+    height: 4.167vw;
+    margin: 6.944vw auto 0;
+}
+.next-menu-btn button {
+    width: 4.167vw;
+    height: 4.167vw;
+    background-color: #dddddd;
+    border-radius: 50%;
+    text-indent: -9999px;
+    font-size: 0;
+    margin-left: 4.167vw;
+}
+.next-menu-btn button:nth-child(1) {
+    margin-left: 0;
+    background-color: #fff;
+}
+
+.match-area {
+    background-color: #242424;
+    padding: 8.889vw 4.444vw;
+}
+.match-area .match-inner {
+    background-color: #fff;
+    padding-bottom: 8.889vw;
+    width: 91.111vw;
+}
+.match-area img {
+    width: 100%;
+    margin-bottom: 15.556vw;
+}
+.match-des {
+    margin: 0 10.556vw;
+    text-align: center;
+    color: #575756;
+}
+.match-des h3 {
+    font-size: 10.278vw;
+    margin-bottom: 8.333vw;
+}
+.match-des p {
+    font-size: 3.611vw;
+    margin-bottom: 11.389vw;
+}
+.match-des .quiz-btn {
+    display: block;
+    margin: auto;
+    width: 46.944vw;
+    height: 15.833vw;
+    background-color: #00a1df;
+    color: #fff;
+    font-size: 4.167vw;
+    line-height: 15.833vw;
+}
+
+/* 매장 안내 */
+.offshop-area {
+    padding: 8.611vw 0 15.278vw;
+}
+.offshop-area .offshop-title {
+    font-size: 8.611vw;
+    line-height: 1.14;
+    text-align: center;
+    color: #00a1df;
+    margin-bottom: 8.889vw;
+}
+.offshop-area .offshop-title-sub {
+    font-size: 4.722vw;
+    text-align: center;
+    color: #666;
+    margin-bottom: 16.389vw;
+}
+.offshop-area .offshop-des {
+    margin: 0 14.167vw;
+}
+.offshop-des dt{
+    width: 34.444vw;
+    height: 8.056vw;
+    line-height: 8.056vw;
+    font-size: 5vw;
+    text-align: center;
+    color: #fff;
+    background-color: #afafaf;
+    margin-bottom: 4.167vw;
+}
+.offshop-des dd {
+    display: inline-block;
+    font-size: 4.167vw;
+    color: #666666;
+    line-height: 1.39;
+}
+.offshop-des .offshop-time {
+    margin-top: 8.889vw;
+}
+
+.offshop-area .find-shop {
+    margin: 10.556vw auto 13.333vw;
+    width: 47.222vw;
+    height: 15.556vw;
+    background-color: #00a1df;
+    color: #fff;
+    font-size: 4.167vw;
+    line-height: 15.556vw;
+    text-align: center;
+}
+.offshop-area .shop-img {
+    width:83.889vw;
+    margin: 0 8.056vw;
+}

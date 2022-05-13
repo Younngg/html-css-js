@@ -24,7 +24,9 @@
 }
 
 .lang-area {
-    position: relative;
+    position: absolute;
+    top: 21px;
+    left: 10px;
     width: 90px;
     font-size: 12px;
     line-height: 25px;
@@ -50,4 +52,39 @@
     right: 13px;
     top: 10px;
 }
-.top-menu-area
+.top-menu-area {
+    position: absolute;
+    width: 174px;
+    height: 45px;
+    top: 8px;
+    right: 165px;
+}
+.top-search-area #searchBox {
+    display: block;
+    float: left;
+    background-color: #edeee2;
+    border: none;
+    width: 174px;
+    height: 45px;
+    border-radius: 45px;
+}
+.top-search-area label {
+    display: block;
+    float: left;
+    background: url(../file/img/search-btn.png) no-repeat;
+    text-indent: -9999px;
+    font-size: 0;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top:8px;
+    right:21px;
+}
+.util-list li {
+    float:left;
+}
+.util-list li:nth-of-type(1) a {
+    width: 38px;
+    height: 38px;
+    background: url('../file/img/mypage-icon.png');
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{font-size: 50px;color: blue;}
+        @media screen and (max-width:1200px){ 
+            body{
+                background-color: aqua;
+            }
+            .txt {
+                font-size: 24px;
+                color: bisque;
+            }
+        }
+        @media screen and (max-width:980px) {
+            body{background-color: blue;}            
+            .txt{color: blueviolet; font-size: 12px;}
+        }
+        @media screen and (max-width:600px) {
+            .txt{color: red;}
+        }
+    </style>
+</head>
+<body>
+    <h1>반응형 테스트</h1>
+    <div class="txtbox">
+        <p class="txt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, iure exercitationem voluptatem inventore aut cum! Nisi ex atque reiciendis eos reprehenderit excepturi mollitia libero, beatae nemo aliquam esse itaque iusto, aperiam doloremque numquam repellendus quo optio sunt dolor praesentium neque ea. Odio voluptates repellendus veritatis aliquid quas maxime error eveniet.
+        </p>
+    </div>
+</body>
+</html>
