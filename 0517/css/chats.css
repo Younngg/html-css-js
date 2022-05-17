@@ -1,0 +1,32 @@
+.chats-section-rows-box {
+  border-top: 1px solid #e0e0e0;
+  padding: 15px;
+}
+.chats-section-row {
+  display: flex;
+  justify-content: space-between;
+}
+.chats-section-column {
+  display: flex;
+}
+.chats-section-column img {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.chats-section-column .chats-name {
+  font-weight: 600;
+}
+.chats-section-column .chats-content {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #999;
+}
+.chats-section-time .chats-time {
+  font-size: 12px;
+  color: #999;
+}
+
+.chats-section-rows-box:last-child {
+  border-bottom: 1px solid #e0e0e0;
+}

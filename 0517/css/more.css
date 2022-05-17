@@ -1,0 +1,100 @@
+.more {
+  background-color: #f2f2f2;
+}
+.more-header {
+  padding: 30px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+.more-header-column {
+  display: flex;
+  align-items: center;
+}
+.more-header-column img {
+  width:50px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.more-header-info .more-header-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.more-header-info .more-header-subtitle {
+  font-size: 12px;
+  color: #aaa;
+}
+.more-header i {
+  color: #523737;
+}
+
+.more-options {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.more-options .more-option-list {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  color: #523737;
+}
+.more-option-list i {
+  margin-bottom: 15px;
+}
+.more-option-list .more-option-title {
+  font-size: 12px;
+}
+
+.more-plus-friends {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+.more-plus-friends .more-pf-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.more-pf-header .more-pf-title {
+  font-size: 17px;
+}
+.more-pf-header .more-pf-learnmore {
+  font-size: 16px;
+  color: #aaa;
+}
+.more-pf-items {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.more-pf-item {
+  flex-basis: 50%;
+  padding: 15px 0;
+}
+.more-pf-item i {
+  margin-right: 20px;
+}
+
+.more-links {
+  background-color: #fff;
+  display: flex;
+  padding: 20px;
+}
+.more-links .more-link-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+.more-links img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
