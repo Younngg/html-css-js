@@ -28,3 +28,7 @@
 
 0516/화면캡쳐/*
 0516/images/*
+
+node_modules/*
+package-lock.json
+Package.json
