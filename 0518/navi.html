@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    *{box-sizing: border-box;}
+    .inner {width:1200px; margin: auto;}
+    .wrapper {min-width: 1200px; width: 100%;}
+    header {background-color: #fff; width: 100%;}
+    .header-top {
+      height: 34px; border-bottom: 1px solid #aaa;
+    }
+    .header-top .inner {
+      display: flex;
+      justify-content: end;
+    }
+    .header-top .util {
+      display: flex;
+    }
+    .util>li>a {display:block; padding: 0 10px; height: 33px; font-size: 12px; border-left: 1px solid #aaa; line-height: 33px; background-color: #ddd;}
+    .util li:last-child a{border-right: 1px solid #aaa;}
+
+    .header-bottom {padding: 40px 0; background-color: #aaa; height: 100px; overflow: hidden; transition: height .35s;}
+    .header-bottom:hover {
+      height: 250px;
+    }
+    .header-bottom .inner {display: flex; justify-content: space-between; padding: 0 12px;}
+    .header-bottom .logo {font-size: 34px; font-weight: bold;}
+    .header-bottom .gnb {display: flex; width: 700px; justify-content: space-between;}
+    .header-bottom .gnb .dep1>a {font-size: 18px; display: block; font-weight: bold; color: #333; height: 33px; line-height: 33px;}
+    .header-bottom .gnb .dep1:hover>a {
+      color: crimson;
+    }
+    .header-bottom .gnb .dep2 {
+      padding-top: 50px;
+    }
+    .header-bottom .gnb .dep2>li>a {
+      color: #666;
+      display: block;
+      height: 30px;
+      line-height: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="header-top">
+        <div class="inner">
+          <ul class="util">
+            <li><a href="#">english</a></li>
+            <li><a href="#">sitemap</a></li>
+            <li><a href="#">search</a></li>
+          </ul>
+        </div><!-- //inner -->
+      </div><!-- //header-top -->
+      <div class="header-bottom">
+        <div class="inner">
+          <h1 class="logo">Gallery</h1>
+          <nav>
+            <ul class="gnb">
+              <li class="dep1">
+                <a href="#">갤러리</a>
+                <ul class="dep2">
+                  <li><a href="#">갤러리 소개</a></li>
+                  <li><a href="#">관람안내</a></li>
+                  <li><a href="#">오시는길</a></li>
+                </ul><!-- //dep2 -->
+              </li>
+              <li class="dep1">
+                <a href="#">갤러리</a>
+                <ul class="dep2">
+                  <li><a href="#">갤러리 소개</a></li>
+                  <li><a href="#">관람안내</a></li>
+                  <li><a href="#">오시는길</a></li>
+                </ul><!-- //dep2 -->
+              </li>
+              <li class="dep1">
+                <a href="#">갤러리</a>
+                <ul class="dep2">
+                  <li><a href="#">갤러리 소개</a></li>
+                  <li><a href="#">관람안내</a></li>
+                  <li><a href="#">오시는길</a></li>
+                </ul><!-- //dep2 -->
+              </li>
+              <li class="dep1">
+                <a href="#">갤러리</a>
+                <ul class="dep2">
+                  <li><a href="#">갤러리 소개</a></li>
+                  <li><a href="#">관람안내</a></li>
+                  <li><a href="#">오시는길</a></li>
+                </ul><!-- //dep2 -->
+              </li>
+              <li class="dep1">
+                <a href="#">갤러리</a>
+                <ul class="dep2">
+                  <li><a href="#">갤러리 소개</a></li>
+                  <li><a href="#">관람안내</a></li>
+                  <li><a href="#">오시는길</a></li>
+                </ul><!-- //dep2 -->
+              </li>
+            </ul><!-- //gnb -->
+          </nav>
+        </div><!-- //inner -->
+      </div><!-- //header-bottom -->
+    </header>
+  </div><!-- //wrapper -->
+</body>
+</html>
