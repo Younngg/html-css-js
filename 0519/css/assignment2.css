@@ -1,0 +1,137 @@
+body {
+  height: 100vh;
+  background-color: #eee;
+  padding-top: 80px;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+header {
+  background-color: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+}
+header .inner {
+  height: 60px;
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .inner .logo h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+header .inner .left-util i {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+main .inner {
+  margin: auto;
+  width: 1000px;
+  display: flex;
+}
+
+/* 왼쪽 */
+main .profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+main .left-area {
+  width: calc(70% - 10px);
+  margin-right: 20px;
+}
+main .input-area {
+  width: 100%;
+  height: 90px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 30px 30px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+main .input-area input {
+  width: 90%;
+  height: 30px;
+  border: none;
+  outline: none;
+}
+main .input-area i {
+  font-size: 20px;
+}
+
+main .post-area {
+  width: 100%;
+  padding: 30px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+.post-area .post-writer {
+  display: flex;
+  padding-bottom: 30px;
+}
+.post-area .post-writer-info {
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+.post-area .post-writer-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.post-area .post-write-time {
+  font-size: 13px;
+  color: #555;
+}
+.post-area .post {
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+.post-bottom i {
+  font-size: 20px;
+  margin-right: 5px;
+  color: #555;
+}
+.post-bottom span {
+  font-size: 15px;
+  margin-right: 20px;
+  color: #555;
+}
+.post-area .img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* right */
+main .right-area {
+  width: calc(30% - 10px);
+} 
+.right-area .friend-area {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.friend-area>div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.friend-area .friends-list-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}

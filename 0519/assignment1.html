@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+    .header-top {
+      background-color: olive;
+      height: 50px;
+      text-align: center;
+      font-size: 40px;
+      line-height: 50px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .header-top h1 {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .header-bottom {
+      padding-left: 100px;
+      height: 50px;
+      background-color: green;
+    }
+    .header-bottom .gnb {
+      display: flex;
+    }
+    .header-bottom .gnb a {
+      display: block;
+      width: 100px;
+      height: 50px;
+      text-align: center;
+      line-height: 50px;
+      border-left: 1px solid #fff;
+    }
+    .header-bottom .gnb a:last-child {
+      border-right: 1px solid #fff;
+    }
+
+    main .inner {
+      padding: 10px 120px;
+      display: flex;
+    }
+    main .left-area {
+      width: calc(30% - 5px);
+    }
+    main .left-area .thum {
+      width: 100%;
+      height: 100px;
+      background-color: skyblue;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+    main .right-area {
+      width: calc(70% - 5px);
+      margin-left: 10px;
+    }
+    main .right-area .box {
+      border-bottom: 1px solid #000;
+      padding: 10px 0 10px;
+    }
+    main .right-area .box h3 {
+      font-size: 16px;
+    }
+    main .right-area .box p {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+    }
+
+    @media screen and (max-width: 1000px) {
+      main .inner {
+      padding: 10px 120px;
+      display: flex;
+      flex-direction: column;
+    }
+      main .left-area {
+        display: flex;
+        width: 100%
+      }
+      main .left-area .thum {
+        width: calc(50% - 5px);
+      }
+      main .left-area .thum:last-child {
+        margin-left: 10px;
+      }
+      main .right-area {
+        width: 100%
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      main .inner {
+      padding: 10px 120px;
+      display: flex;
+      flex-direction: column;
+      }
+      .header-bottom {
+        padding-left: 0;
+        height: auto;
+        background-color: transparent;
+      }
+      .header-bottom .gnb {
+        display: flex;
+        flex-direction: column;
+      }
+      .header-bottom .gnb a {
+        display: block;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        margin-bottom: 1px;
+        line-height: 50px;
+        border-left: none;
+        background-color: green;
+      }
+      .header-bottom .gnb a:last-child {
+        border-right: 1px solid #fff;
+      }
+      main .left-area {
+        display: flex;
+        flex-direction: column;
+        width: 100%
+      }
+      main .left-area .thum {
+        width: 100%
+      }
+      main .left-area .thum:last-child {
+        margin-left: 0px;
+      }
+      main .right-area {
+        width: 100%
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-top">
+      <h1>웹디자인</h1>
+    </div>
+    <div class="header-bottom">
+      <nav class="gnb">
+        <a href="#">menu1</a>
+        <a href="#">menu2</a>
+        <a href="#">menu3</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="inner">
+      <div class="left-area">
+        <div class="thum">
+          <h2>제목</h2>
+          <p>내용입니다</p>
+        </div>
+        <div class="thum">
+          <h2>제목</h2>
+          <p>내용입니다</p>
+        </div>
+      </div><!-- //left-area -->
+      <div class="right-area">
+        <div class="box">
+          <h3>제목</h3>
+          <p>내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.</p>
+        </div>
+        <div class="box">
+          <h3>제목</h3>
+          <p>내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.</p>
+        </div>
+        <div class="box">
+          <h3>제목</h3>
+          <p>내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.</p>
+        </div>
+        <div class="box">
+          <h3>제목</h3>
+          <p>내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.</p>
+        </div>
+        <div class="box">
+          <h3>제목</h3>
+          <p>내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.</p>
+        </div>
+        <div class="box">
+          <h3>제목</h3>
+          <p>내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.</p>
+        </div>
+        <div class="box">
+          <h3>제목</h3>
+          <p>내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.내용입니다.</p>
+        </div>
+      </div><!-- //rignt-area -->
+    </div><!-- //inner -->
+  </main>
+  <footer>
+    <p>2014 website</p>
+  </footer>
+</body>
+</html>
