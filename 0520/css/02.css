@@ -1,0 +1,65 @@
+@use '_core.scss';
+.box1 {
+  border-radius: 20px;
+  border: 10px solid yellow;
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+}
+
+.box2 {
+  border-radius: 30px;
+  border: 10px solid yellow;
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+}
+
+.box3 {
+  border-radius: 50%;
+  border: 10px solid yellow;
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+}
+
+.box4 {
+  border-radius: 50px 0 50px 0;
+  border: 10px solid yellow;
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+}
+
+.box5 {
+  border-radius: 100% 0 0 0;
+  border: 10px solid yellow;
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+}
+
+.box6 {
+  border-radius: 50% 50% 50% 0;
+  border: 10px solid yellow;
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+}
+
+.box7 {
+  border-radius: 100% 0 100% 0;
+  border: 10px solid yellow;
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+}
+
+.box8 {
+  border-radius: 50% 50% 0 0;
+  border: 10px solid yellow;
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+}
+/*# sourceMappingURL=02.css.map */

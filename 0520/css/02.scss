@@ -1,0 +1,49 @@
+@use '_core.scss';
+
+// @mixin btn-basic($bgcolor) {
+//   padding: 10px;
+//   color: #fff;
+//   margin: 10px;
+//   border-radius: 4px;
+//   background-color: $bgcolor;
+// }
+// .wrapper {
+//   display: flex
+// }
+// .box1 {
+//   @include btn-basic(blue);
+// }
+// .box2 {
+//   @include btn-basic(gray);
+// }
+// .box3 {
+//   @include btn-basic(green);
+// }
+// .box4 {
+//   @include btn-basic(red);
+// }
+// .box5 {
+//   @include btn-basic(yellow);
+//   color: #000;
+// }
+// .box6 {
+//   @include btn-basic(skyblue);
+//   color: #000;
+// }
+
+@mixin border($radius){
+  border-radius: $radius;
+  border: 10px solid yellow;
+  width: 200px;
+  height: 200px;
+  background-color: skyblue;
+}
+
+.box1 {@include border(20px)}
+.box2 {@include border(30px)}
+.box3 {@include border(50%)}
+.box4 {@include border(50px 0 50px 0)}
+.box5 {@include border(100% 0 0 0)}
+.box6 {@include border(50% 50% 50% 0)}
+.box7 {@include border(100% 0 100% 0)}
+.box8 {@include border(50% 50% 0 0)}

@@ -1,0 +1,93 @@
+@use '_core.scss';
+.btn1 {
+  font-size: 20px;
+  padding: 20px 40px;
+  color: #fff;
+  background-color: #296;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn2 {
+  font-size: 20px;
+  padding: 20px 40px;
+  color: #fff;
+  background-color: #734;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn3 {
+  font-size: 20px;
+  padding: 20px 40px;
+  color: #fff;
+  background-color: #009;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box, .box1, .box2 {
+  width: 550px;
+  height: 150px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px;
+}
+
+.box1 {
+  border: 5px solid #0800ff;
+}
+
+.box2 {
+  border: 5px solid #365;
+}
+
+.box4 {
+  width: 500px;
+  height: 500px;
+  background-color: #999;
+}
+
+.box4 p {
+  color: #0800ff;
+  font-size: 50px;
+}
+
+.box4 a > span:hover {
+  background-color: #0800ff;
+}
+
+.box4 a span {
+  color: #fff;
+  font-size: 50px;
+}
+/*# sourceMappingURL=01.css.map */
