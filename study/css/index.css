@@ -232,3 +232,102 @@
   height: 514px;
   background: url('../img/media.png') no-repeat center / cover;
 }
+.sns-area {
+  background: url('../img/insta-bg.png') no-repeat center / cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sns-title {
+  padding-top: 45px;
+  margin-bottom: 30px;
+  color: #1b2389;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sns-title h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.sns-list-container {
+  width: 936px;
+  height: 616x;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 12px 24px;
+  padding: 12px;
+  margin-bottom: 60px;
+}
+
+.sns-list-container img {
+  width:100%;
+}
+.sns-list-container img:hover {
+  opacity: 0;
+  transition: all .4s;
+}
+.inside.sns-bottom {
+  z-index: 1000;
+  width: 100%;
+  height: 52px;
+  background: url('../img/insta-bottom.png') center / cover;
+}
+.sns-btn {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #1b2389;
+  color: #fff;
+  padding: 30px 0 150px;
+  line-height: 1.5;
+  font-size: 11px;
+}
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.footer-menu div p:first-child{
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer-menu .contact p:nth-child(5) {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: rgb(243, 243, 243);
+}
+.footer-info div:first-child {
+  color: rgb(238, 238, 238);
+}
+.talkBtn {
+  background: url("../img/talkbtn.png") no-repeat center / cover;
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  bottom: 30px;
+  left: 15px;
+}
+.topBtn {
+  width: 53px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  color: #ccc;
+  background-color: #fff;
+  text-align: center;
+  line-height: 48px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0;}
+    h1 {text-align: center;}
+    ul,li {list-style: none;}
+    ul {display: flex; justify-content: center;}
+    li {width: 150px; height: 150px; line-height: 150px; text-align: center; margin: 10px; border: 1px solid black;}
+    .logoBg {background-color: red; border-radius: 20px; transition: all 1s;}
+    .on {display: none;}
+  </style>
+</head>
+<body>
+  <h1 id="logo"><img src="img/coco/coco_logo.png" alt=""></h1>
+  <ul>
+    <li class="list"></li>
+    <li class="list"></li>
+    <li class="list"></li>
+    <li class="list"></li>
+    <li class="list"></li>
+    <li class="list"></li>
+  </ul>
+  <script>
+    /* const logo = document.querySelector('#logo');
+    const list = document.querySelectorAll(".list")
+    
+    logo.addEventListener("click",() => {
+      list.forEach((list) => {
+        list.classList.toggle("logoBg");
+      })
+    }) */
+    const logo = document.querySelector('#logo');
+    const li = document.querySelectorAll(".list");
+    
+    /* function libgclick() {
+      for(i=0; i < li.length; i++){
+        let li1 = document.querySelector(`.list:nth-child(${i})`);
+        li1.classList.toggle("logoBg");
+        li1.addEventListener("click", () => {li1.classList.toggle("logoBg");})
+      }
+    }
+    li.addEventListener("click", libgclick);
+    libgclick(); */
+
+    li.forEach((li) => {
+      li.addEventListener("click", () => {
+        li.classList.toggle("logoBg")
+      })
+    })
+    
+
+  </script>
+</body>
+</html>

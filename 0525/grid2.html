@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .wrapper {
+      border: 2px solid #000;
+      background-color: pink;
+      display: grid;
+      grid-template-areas: 'gnb header header' 'gnb centent aside' 'gnb footer aside';
+    }
+    .wrapper>div {border:1px solid #000;}
+    .header{
+      grid-area: header;
+    }
+    .gnb{grid-area: gnb;}
+    .content{grid-area: centent;}
+    .aside{grid-area: aside};
+    .footer{grid-area: footer;}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">1</div>
+    <div class="gnb">2</div>
+    <div class="content">3</div>
+    <div class="aside">4</div>
+    <div class="footer">5</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      border: 5px solid #000;
+      background-color: blanchedalmond;
+      height: 800px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      justify-content: space-between;
+      align-content: space-between;
+    }
+    .item {
+      background-color: #e69;
+      width: 150px; height: 150px;
+      font-size: 30px;
+      border: 1px solid #000;
+      display: grid;
+      align-items: center;
+      justify-items: center;
+    }
+    .item>div {
+      width: 100px;
+      height: 100px;
+      background-color: #664;
+      color: #fff;
+      text-align: center;
+      line-height: 100px;
+    }
+    .item2 div{
+      justify-self: start;
+      align-self: start;
+    }
+    .item9 div {
+      width: auto;
+      height: auto;
+      justify-self: stretch;
+      align-self: stretch;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item item1">
+      <div>1</div>
+    </div>
+    <div class="item item2">
+      <div>2</div>
+    </div>
+    <div class="item item3">
+      <div>3</div>
+    </div>
+    <div class="item item4">
+      <div>4</div>
+    </div>
+    <div class="item item5">
+      <div>5</div>
+    </div>
+    <div class="item item6">
+      <div>6</div>
+    </div>
+    <div class="item item7">
+      <div>7</div>
+    </div>
+    <div class="item item8">
+      <div>8</div>
+    </div>
+    <div class="item item9">
+      <div>9</div>
+    </div>
+  </div>
+</body>
+</html>

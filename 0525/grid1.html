@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container1 {
+      border: 5px solid #000;
+      background-color: green;
+      display: grid; 
+      grid-template-areas: '. . . item item ' '. . . item item'; /* 반복된 이름만큼 영역을 가짐 */
+    }
+    .container1>div {
+      text-align: center;
+      font-size: 30px;
+      border: 1px solid #000;
+    }
+    .container1>div.item{
+      background-color: red;
+      grid-area: item;
+    }
+  </style>
+</head>
+<body>
+  <div class="container container1">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div class="item">7</div>
+  </div>
+</body>
+</html>
