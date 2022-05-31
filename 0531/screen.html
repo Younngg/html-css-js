@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/screen.css" rel="stylesheet">
+    <style>
+        #imgslider{transition: left 0.5s; position: relative;}
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="screen">
+            <ul id="imgslider" class="clearfix">
+                <li data-index="0"><img src="img/hero/slide01.png" alt=""></li>
+                <li data-index="1"><img src="img/hero/slide02.png" alt=""></li>
+                <li data-index="2"><img src="img/hero/slide03.png" alt=""></li>
+                <li data-index="3"><img src="img/hero/slide04.png" alt=""></li>
+                <li data-index="4"><img src="img/hero/slide05.png" alt=""></li>
+            </ul>
+        </div>
+        <!--//스크린-->
+        <div id="icons" class="clearfix">
+            <a href="#" class="icon01" data-index='0'>>Avengers</a>
+            <a href="#" class="icon02" data-index='1'>X-Men</a>
+            <a href="#" class="icon03" data-index='2'>Transformer</a>
+            <a href="#" class="icon04" data-index='3'>Superman</a>
+            <a href="#" class="icon05" data-index='4'>Batman</a>
+        </div>
+        <!--//아이콘-->
+    </div>
+    <!--//메인-->
+    <div id="control">
+        <a href="#" class="prev">prev</a>
+        <a href="#" class="next">>next</a>
+    </div>
+    <!--//컨트롤-->
+    
+    <script>
+        const screenImgList = document.querySelector('#imgslider');
+        const screenImg = document.querySelectorAll('#imgslider>li')
+        const iconList = document.querySelector('#icons');
+        const icons = document.querySelectorAll('#icons>a');
+        const prevBtn = document.querySelector('.prev');
+        const nextBtn = document.querySelector('.next');
+
+        /* iconList.addEventListener('click', (e)=>{
+            icons.forEach((ele)=>{
+                ele.classList.remove('on');
+            })
+            screenImgList.style.left = `${-960 * e.target.dataset.index}px`
+            e.target.classList.add('on');
+        }) */
+
+        icons.forEach((ele)=>{
+            ele.addEventListener('click', (e) => {
+                let selected = e.target;
+                let indexNum = selected.dataset.index;
+                screenImgList.style.left = `${-960 * indexNum}px`
+                selectIcon(selected);
+                current = indexNum;
+            });
+        });
+
+        function selectIcon(selected){
+            icons.forEach(ele=>{
+                ele.classList.remove('on');
+            });
+            selected.classList.add('on');
+        }
+
+        let event = new Event('click');
+
+        let current = 0;
+        prevBtn.addEventListener('click', ()=>{
+            current--;
+            if(current<0)current=4;
+            icons[current].dispatchEvent(event);
+        })
+        nextBtn.addEventListener('click', ()=>{
+            current++;
+            if(current>4)current=0;
+            icons[current].dispatchEvent(event);
+        })
+
+        /* let current = screenImgList.style.left;
+
+        prevBtn.addEventListener('click', e => {
+            current--;
+            updateSlider();
+        })
+
+        nextBtn.addEventListener('click', e => {
+            if(current < 0){
+                current -= 960;
+                updateSlider();
+            } else if(current >= 0){
+                current += 960;
+                updateSlider();
+            }
+            
+        })
+        
+        
+        function updateSlider(){
+            if(current<0){
+                current = 3840;
+            } else if(current>3841){
+                current = 0;
+            }
+            screenImgList.style.left = `${-current}px`
+        } */
+
+    </script>
+</body>
+</html>
