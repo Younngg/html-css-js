@@ -1,18 +1,46 @@
-@use '_core.scss';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh !important;
+}
+
+li,
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.txt-bold {
+  font-weight: 700;
+}
+
 .btn1 {
   font-size: 20px;
   padding: 20px 40px;
   color: #fff;
   background-color: #296;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn2 {
@@ -20,15 +48,9 @@
   padding: 20px 40px;
   color: #fff;
   background-color: #734;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn3 {
@@ -36,35 +58,23 @@
   padding: 20px 40px;
   color: #fff;
   background-color: #009;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.box, .box1, .box2 {
+.box, .box2, .box1 {
   width: 550px;
   height: 150px;
   font-size: 16px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin: 50px;
 }
 
 .box1 {
-  border: 5px solid #0800ff;
+  border: 5px solid rgb(8, 0, 255);
 }
 
 .box2 {
@@ -76,18 +86,14 @@
   height: 500px;
   background-color: #999;
 }
-
 .box4 p {
-  color: #0800ff;
+  color: rgb(8, 0, 255);
   font-size: 50px;
 }
-
 .box4 a > span:hover {
-  background-color: #0800ff;
+  background-color: rgb(8, 0, 255);
 }
-
 .box4 a span {
   color: #fff;
   font-size: 50px;
-}
-/*# sourceMappingURL=01.css.map */
+}/*# sourceMappingURL=01.css.map */

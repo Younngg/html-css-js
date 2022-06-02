@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @import url(css/reset.css);
+        #outer{width: 400px;height: 400px;background: #f00;position: relative;margin: 100px auto;}
+        #inner{width: 200px;height: 200px;background: #000;position: absolute;top:50px;left:100px}
+        
+    </style>
+</head>
+<body>
+    <div style='height:1500px'></div>
+    <div id="outer">
+        <div id="inner"></div>
+    </div> 
+    <script>
+        const inner = document.querySelector('#inner');
+        const outer = document.querySelector('#outer');
+        const posTop = inner.getBoundingClientRect().top; // 브라우저 안쪽부터의 위치를 나타냄. right는 left + width 
+        const posLeft = inner.getBoundingClientRect().left;// bottom은 top + height
+        //css에서 준 값을 뽑고 싶으면 getcomputedstyle
+        const offsetTop = inner.offsetTop; // css포지션 정책대로 부모로부터의 위치 받아온다(부모요소에 포지션 없으면 뭐?? 위에랑 똑같이 절대값으로 보인다)
+        const offsetLeft = inner.offsetLeft;
+        console.log(posTop);
+        console.log(posLeft);
+        console.log(offsetTop);
+        console.log(offsetLeft);
+
+        console.clear();
+
+        console.log(window.pageYOffset); //올라간 페이지의 높이 
+        console.log(window.scrollY);
+
+        console.log(window.scrollY + posTop);
+        /* window.scrollY + element.getBoundingClientRect().top; : element의 절대좌표 ****/
+
+        function getPosTop(ele) {
+            return window.scrollY + ele.getBoundingClientRect().top;
+        }
+        
+        console.log(getPosTop(inner));
+        console.log(getPosTop(outer));
+
+    </script>
+</body>
+</html>
+
+
+

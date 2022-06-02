@@ -1,4 +1,38 @@
-@use '_core.scss';
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #000;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh !important;
+}
+
+li,
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.txt-bold {
+  font-weight: 700;
+}
+
 body {
   font-size: 10px;
   line-height: 1.6;
@@ -31,5 +65,4 @@ p {
   font-weight: 400;
   color: #222;
   font-size: 10px;
-}
-/*# sourceMappingURL=03.css.map */
+}/*# sourceMappingURL=03.css.map */
