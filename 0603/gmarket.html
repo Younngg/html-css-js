@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <style>
+    .wrap1{
+      margin: 50px auto 0;margin-left: -25vw;margin-right: -25vw;position: relative;
+    }
+    .wrap1 .swiper {position: relative}
+    .wrap1 .dim{
+            background-color: rgba(0,0,0,.55);
+            height: 100%;
+            position: absolute;
+            top:0;
+            z-index: 10000;
+        }
+    .wrap1 .left-dimmed{left:0;right: 50%;margin-right: 25vw;}
+    .wrap1 .right-dimmed{left:50%;right: 0;margin-left: 25vw;}
+    .wrap1 .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+    }
+    .wrap1 .swiper-slide img {
+      width: 50vw;
+    }
+    .wrap1 .swiper-pagination {
+      border-radius: 25px 0 0 25px;
+      float: left;
+      z-index: 30000;
+      width: 70px;
+      height: 40px;
+      margin-left: 6px;
+      font-size: 14px;
+      color: #fff;
+      line-height: 42px;
+      position: absolute;
+      text-align: center;
+      background-color: rgba(183, 183, 183, 0.634);
+      left: 60%;
+    }
+    .wrap1 .swiper-button-prev {color: #fff; position: absolute; left: 50vw; opacity: 1; text-shadow: 0 0 3px #00000086;}
+    .wrap1 .swiper-button-next {color: #fff; position: absolute;right: 50vw; opacity: 1; text-shadow: 0 0 3px #00000086;}
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap1">
+    <!-- Slider main container -->
+    <div class='left-dimmed dim'></div>
+    <div class='right-dimmed dim'></div>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/gmarket1.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/gmarket2.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/gmarket3.jpeg" alt=""></div>
+        <div class="swiper-slide"><img src="img/gmarket4.jpeg" alt=""></div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+<script>
+  const swiper = new Swiper(".swiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 3,
+    spaceBetween: 0,
+    autoplay: {
+    delay:2000,
+    },
+  });
+</script>
+</body>
+</html>

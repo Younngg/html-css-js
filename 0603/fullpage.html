@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0;padding: 0; text-decoration: none; color: inherit;}
+    .gnb {
+      font-size: 40px;
+      position: fixed;
+      top: 40%;
+      z-index: 1000;
+    }
+    .gnb li {
+      color: rgb(170, 170, 170);
+      opacity: 0.6;
+      transition: all .2s;
+    }
+    .gnb li a{
+      display: block;
+      padding: 10px 10px;
+      margin-left: 30px;
+    }
+    .gnb li.on {color: white; opacity: 1;}
+    .box {
+      width: 100vw;
+      height: 100vh;
+    }
+    .box1 {background: url(img/fullpage/01.png) no-repeat center / cover;}
+    .box2 {background: url(img/fullpage/02.png) no-repeat center / cover;}
+    .box3 {background: url(img/fullpage/03.png) no-repeat center / cover;}
+    .box4 {background: url(img/fullpage/04.png) no-repeat center / cover;}
+    .box5 {background: url(img/fullpage/05.png) no-repeat center / cover;}
+    .box6 {background: url(img/fullpage/06.png) no-repeat center / cover;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <ul class="gnb">
+      <li><a href="#">section1</a></li>
+      <li><a href="#">section2</a></li>
+      <li><a href="#">section3</a></li>
+      <li><a href="#">section4</a></li>
+      <li><a href="#">section5</a></li>
+      <li><a href="#">section6</a></li>
+    </ul>
+    <div class="box box1" data-index="0"></div>
+    <div class="box box2" data-index="1"></div>
+    <div class="box box3" data-index="2"></div>
+    <div class="box box4" data-index="3"></div>
+    <div class="box box5" data-index="4"></div>
+    <div class="box box6" data-index="5"></div>
+  </div>
+  <script>
+    const box = document.querySelectorAll('.box');
+    const li = document.querySelectorAll('.gnb li')
+
+    const observeFnc = (entries)=> {
+      entries.forEach((ele)=>{
+        const index = ele.target.dataset.index;
+        console.log(index)
+        li.forEach(ele => ele.classList.remove('on'));
+        li[index].classList.add('on');
+      })
+    }
+
+    const option = {
+      threshold: 0.6
+    }
+
+    const observerItem = new IntersectionObserver(observeFnc, option);
+
+    box.forEach((ele)=>{
+      observerItem.observe(ele);
+    })
+  </script>
+</body>
+</html>
