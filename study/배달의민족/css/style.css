@@ -1,0 +1,281 @@
+body{
+  background-color: rgb(42, 193, 188);
+}
+
+/* 헤더 */
+.header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 100%;
+  max-width: 1024px;
+  padding: 60px 173px 0px 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 img {
+  width: 142px;
+  height: 32px;
+}
+
+.header .sns-list {
+  display: flex;
+}
+
+.header #downloadBtn {
+  width: 140px;
+  height: 48px;
+  margin-right: 26px;
+  background-image: url(../img/btn-download-white_3x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.header #downloadBtn.hidden {
+  opacity: 0;
+}
+
+.header .sns-list .list {
+  display: flex;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+.header .sns-list li {
+  margin-right: 5px;
+  width: 45px;
+}
+.header .sns-list li:first-child, .header .sns-list li:last-child {
+  margin-right: 0px;
+}
+.header .sns-list img {
+  width: 34px;
+  height: 34px;
+}
+
+#anchor {
+  position: fixed;
+  right: 10%;
+  top: 47%;
+  z-index: 1000;
+  text-indent: -999px;
+  font-size: 0px;
+  opacity: 1;
+  transition: opacity .3s;
+}
+#anchor li {
+  margin-top: 10px;
+}
+#anchor li:first-child {
+  margin-top: 0px;
+}
+#anchor li a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/dotScroll02_2x.png) 0% 0% / 100% no-repeat;
+}
+#anchor li.active a {
+  background: url(../img/dotSelect_2x.png) 0% 0% / 100% no-repeat;
+}
+#anchor.hidden {
+  opacity: 0;
+}
+
+.scroll img{
+  z-index: 1000;
+  width: 68px;
+  height: 68px;
+  position: fixed;
+  bottom: 3%;
+  left: calc(50% - 34px);
+}
+
+#rider-recruit {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  width: 173px;
+  height: 226px;
+  opacity: 1;
+  transition: opacity .3s;
+}
+#rider-recruit img{
+  width: 100%;
+  height: auto;
+}
+#rider-recruit.hidden {
+  opacity: 0;
+}
+
+.section {
+  padding: 165px 50px 0px;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.section1 {
+  background: url(../img/main_01_2x.jpg);
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.section .wrap {
+  width: 1024px;
+  padding: 0 50px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.section .title {
+  width: 50%;
+}
+.section .title .titleImg {
+  width: 100%;
+  height: auto;
+}
+
+.fp-table {
+  justify-content: flex-start;
+}
+
+.section1 .download-list {
+  margin-top: 40px;
+  height: 174px;
+  display: flex;
+  justify-content: space-between;
+}
+.section1 .download-list p {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.38;
+  margin-bottom: 14px;
+}
+.section1 .download-list button {
+  width: 200px;
+  height: 70px;
+  padding: 15px 30px;
+  border-radius: 100px;
+  border: none;
+}
+.section1 .download-list .appleStore {
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  background-image: url(../img/img-appstore-default_2x.png);
+  background-size: 140px;
+  background-position: center center;
+  margin-right: 12px;
+}
+.section1 .download-list .googleStore {
+  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  background-image: url(../img/img-googleplay-default_2x.png);
+  background-size: 140px;
+  background-position: center center;
+}
+
+.section1 .qrcode img {
+  width: min(225px, 20vh);
+}
+
+.section2 {
+  position: relative;
+}
+.section2 .animation-img-bike {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+.section2 .animation-img-bike img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.section2 .animation-img-bike .bike-ani {
+  top: -60px;
+  right: 60px;
+  transition: all .5s;
+}
+.section2 .animation-img-bike .bike-ani.active {
+  top:0;
+  right: 0;
+  transition: all .5s;
+}
+.section .title p:nth-of-type(1){
+  margin-top: 3%;
+}
+.section .title p {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  line-height: 1.38;
+}
+.section .title span:nth-of-type(1) {
+  margin-top: 10px;
+}
+.section .title span {
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  opacity: 0.7;
+  display: block;
+  line-height: 1.38;
+}
+
+.section3 {
+  position: relative;
+}
+.section .animation-img {
+  position: absolute;
+  right: 140px;
+  width: 50%;
+  transition: all .3s;
+  bottom: -700px;
+  opacity: 0;
+}
+.section .animation-img img {
+  width: 100%;
+}
+.section .animation-img.active {
+  opacity: 1;
+  bottom:0;
+}
+
+.section4 .title .gift-card-btn {
+  margin-top: 25px;
+  width: 223px;
+  height: 39px;
+  display: block;
+}
+.section4 .title .gift-card-btn img {
+  width: 100%;
+}
+
+.section6 .animation-img.right {
+  position: absolute;
+  right: -100px;
+  width: 50%;
+  transition: all .3s;
+  bottom: 25%;
+  opacity: 0;
+}
+.section6 .animation-img.right img{
+  width: 100%;
+}
+.section6 .animation-img.right.active {
+  opacity: 1;
+  right:140px;
+}

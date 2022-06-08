@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const obj = {num:1}
+    const newObj = Object.assign({},obj);
+    newObj.num = 3
+    console.log(obj);
+    console.log(newObj);
+    console.log(obj === newObj);
+
+    const user = {
+      name:'철수',
+      hobby: {
+        a: 'game',
+        b: 'music',
+      },
+    };
+    const newUser = Object.assign({},user);
+    newUser.hobby.a = 'book' // 2뎁스는 값이 아닌 주소가 복사 되어 원본도 수정됨
+    newUser.name = '영희'
+    console.log(user);
+    console.log(newUser); 
+
+    const item = {
+      type: 101,
+      color: {
+        a: 'red',
+        b: 'blue'
+      }
+    };
+    const newItem = {...item}
+    newItem.type = 202
+    newItem.color.a = 'green' // 2뎁스는 값이 아닌 주소가 복사 되어 원본도 수정됨
+
+    console.log(item);
+    console.log(newItem);
+
+    console.clear;
+
+    // json : 백엔드에서 자료를 받아올 때 json이라는 자료의 형태로 보내줌. 오브젝트와 똑같은 모양의 자료 형태를 갖고 있음. 단, 객체 키값은 따옴표가 없는데 json데이터 키값은 따옴표가 있음.
+    // JSON.stringify() : 자료열을 문자로 바꾸는거
+    // JSON.parse() : 문자를 자료열로 바꾸는거
+
+    const man = {
+      name: '철수',
+      hobby: {
+        a: 'soccer',
+        b: 'game'
+      }
+    }
+
+    let newMan = JSON.stringify(man)
+    newMan = JSON.parse(newMan);
+    newMan.hobby.a = 'piano'
+    console.log(man);
+    console.log(newMan);
+
+  </script>
+</body>
+</html>
