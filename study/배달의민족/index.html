@@ -129,12 +129,54 @@
       </div>
       <div class="section section7">
         <div class="wrap">
-
+          <div class="title">
+            <img class='titleImg' src="img/ctn03_text_02_2x.png" alt="">
+            <p>궁금한 맛은 직접 물어보고, 구경하는 재미</p>
+            <p>이제 배민에서 생생하게 경험하세요!</p>
+          </div>
+          <div class="animation-img">
+            <img src="img/img-flag_2x.png" alt="">
+          </div>
         </div>
       </div>
-      <div class="section section8">
+      <div class="section section8 footer">
         <div class="wrap">
-
+          <div class='footer-title'>
+            <img src="img/우리가 어떤 민족입니까.png" alt="">
+            <a href="#"><img class='app-download-btn' src="img/앱 다운로드하러 가기.png" alt=""></a>
+          </div>
+          <div class="footer-nav">
+            <ul class='shortcut-list'>
+              <li><a href="#"><img src="img/우아한형제들 이동하기.png" alt=""></a></li>
+              <li><a href="#"><img src="img/배민사장님광장 이동하기.png" alt=""></a></li>
+              <li><a href="#"><img src="img/배민문방구 이동하기.png" alt=""></a></li>
+              <li><a href="#"><img src="img/라이더모집 이동하기.png" alt=""></a></li>
+            </ul>
+            <ul class="sns-nav">
+              <li><a href="#"><img src="img/페이스북.png" alt=""></a></li>
+              <li><a href="#"><img src="img/인스타그램.png" alt=""></a></li>
+              <li><a href="#"><img src="img/네이버블로그.png" alt=""></a></li>
+              <li><a href="#"><img src="img/유투브.png" alt=""></a></li>
+            </ul>
+          </div>
+          <div class="address">
+            <p>
+              <span>(주)우아한형제들</span><br>
+              <span>서울시 송파구 위례성대로 2 장은빌딩 2층</span>
+            </p>
+            <p>
+              <span>사업자번호 : 120-87-65763</span>
+              <a href="#"><span>사업자정보확인</span></a><br>
+              <span>통신판매업 : 서울 송파-0515</span>
+            </p>
+            <p>
+              <span>전자금융분쟁처리</span><br>
+              <span>TEL : 1600-0987</span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <span>FAX : 050-6050-0400</span><br>
+              <span> MAIL : &nbsp;</span>
+              <a href="#"><span>help@woowahan.com</span></a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -146,12 +188,8 @@
     const riderRecruit = document.querySelector('#rider-recruit');
     const anchor = document.querySelector('#anchor');
     const bikeAni = document.querySelector('.bike-ani');
-    const page3Ani = document.querySelector('.section3 .animation-img');
-    const page4Ani = document.querySelector('.section4 .animation-img');
-    const page5Ani = document.querySelector('.section5 .animation-img');
-    const page6Ani = document.querySelector('.section6 .right');
-    
-    const pageAni = document.querySelectorAll('.animation-img');
+    const scrollIcon = document.querySelector('.scroll');
+    const header = document.querySelector('.header')
 
     new fullpage('#fullpage', {
     //options here
@@ -174,28 +212,48 @@
         downloadBtn.classList.add('hidden');
       }
 
-      for(let i=2; i<7; i++){
-        if(dest == i) {
-          let num = i + 3
-          pageAni[num].classList.add('active');
-        }
+      if(dest == 7) {
+        scrollIcon.classList.add('hidden');
+        header.classList.add('hidden');
+      } else {
+        scrollIcon.classList.remove('hidden');
+        header.classList.remove('hidden');
       }
 
-      // if(dest == 1) {
-      //   bikeAni.classList.add('active');
-      // }
-      // if(dest == 2) {
-      //   page3Ani.classList.add('active');
-      // }
-      // if(dest == 3) {
-      //   page4Ani.classList.add('active');
-      // }
-      // if(dest == 4) {
-      //   page5Ani.classList.add('active');
-      // }
-      // if(dest == 5) {
-      //   page6Ani.classList.add('active');
-      // }
+      if(dest == 1) {
+        bikeAni.classList.add('active');
+      }
+
+      for(let i=2; i<7; i++){
+        if(dest == i) {
+          let img = document.querySelector(`.section${i + 1} .animation-img`);
+          img.classList.add('active');
+        }
+      }
+      
+      /************************************
+      내 노력의 흔적들 ..    
+      pageAni.forEach((ele, index) => {
+        if((ele.index + 3) == dest.index) {
+          ele.classList.add('active')
+        }
+      })
+
+
+      
+      if(dest == 2) {
+        page3Ani.classList.add('active');
+      }
+      if(dest == 3) {
+        page4Ani.classList.add('active');
+      }
+      if(dest == 4) {
+        page5Ani.classList.add('active');
+      }
+      if(dest == 5) {
+        page6Ani.classList.add('active');
+      }
+      ***********************************/
     },// afterLoad 콜백
   })
   </script>
